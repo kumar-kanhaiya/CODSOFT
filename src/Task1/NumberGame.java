@@ -9,7 +9,8 @@ public class NumberGame {
         int ans = 1 ;
         while(true){
             if(ans>7){
-                System.out.print("You took more than 7 attempt ");
+                System.out.print("You took more than 7 attempt , Please restart game !!");
+                break;
             }
 
             System.out.print("Guess your number between 1 to 100 : ");
