@@ -1,7 +1,33 @@
 package Task1;
 
+import java.util.Scanner;
+
 public class NumberGame {
     public static void main(String[] args) {
+        int computerGuess = (int) (Math.random() * 100 + 1);
+        Scanner input = new Scanner(System.in);
+        int ans = 1 ;
+        while(true){
+            if(ans>7){
+                System.out.print("You took more than 7 attempt ");
+            }
 
+            System.out.print("Guess your number between 1 to 100 : ");
+            int number = input.nextInt();
+            if(number > computerGuess){
+                System.out.print("Number is too high \n");
+                ans++;
+            }
+            else if(number < computerGuess){
+                System.out.println("Number is too low \n");
+                ans++;
+            }
+            else{
+                // ans found
+                System.out.print("Successfully guess the number !!!\n");
+                System.out.printf("You took %d  attempt " , ans);
+                break;
+            }
+        }
     }
 }
