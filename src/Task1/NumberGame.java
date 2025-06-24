@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NumberGame {
     public static void main(String[] args) {
+        System.out.println("\n💖Welcome To Number Guessing Game 💖\n");
         int computerGuess = (int) (Math.random() * 100 + 1);
         Scanner input = new Scanner(System.in);
         int ans = 1 ;
