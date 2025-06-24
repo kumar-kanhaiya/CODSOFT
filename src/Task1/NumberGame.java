@@ -31,5 +31,7 @@ public class NumberGame {
                 break;
             }
         }
+        System.out.print("Thanks for playing !!\n");
+        System.out.println();
     }
 }
