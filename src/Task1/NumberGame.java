@@ -20,7 +20,7 @@ public class NumberGame {
                 ans++;
             }
             else if(number < computerGuess){
-                System.out.println("Number is too low \n");
+                System.out.print("Number is too low \n");
                 ans++;
             }
             else{
