@@ -32,6 +32,6 @@ public class NumberGame {
             }
         }
         System.out.print("Thanks for playing !!\n");
-        System.out.println();
+        System.out.println("This program is made by Kanhaiya Kumar");
     }
 }
