@@ -1,5 +1,5 @@
 package Task1;
-// Task -1
+//
 
 import java.util.Scanner;
 
