@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class StudentGradeCalculator {
     public static void main(String[] args) {
         System.out.println("\n💖Welcome to Student Grade Calculator Program 💖");
-        float math=0 , physics=0 , chemistry=0 , computerScience =0, english=0 ;
+        float math , physics, chemistry , computerScience, english;
         Scanner input = new Scanner(System.in);
-        while(math<100 || physics <100 || chemistry <100 || english<100|| computerScience < 100 ) {
+        while(true) {
             System.out.print("Enter Maths Number : ");
             math = input.nextFloat();
             System.out.print("Enter Physics Number : ");
@@ -19,6 +19,7 @@ public class StudentGradeCalculator {
             System.out.print("Enter English Number : ");
             english = input.nextFloat();
             if(math<=100 && chemistry<=100 && computerScience<=100 && physics<=100 && english<=100){
+                System.out.println("Enter marks less than or equal to 100");
                 System.out.println();
                 break;
             }
