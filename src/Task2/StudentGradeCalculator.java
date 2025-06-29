@@ -19,7 +19,7 @@ public class StudentGradeCalculator {
             System.out.print("Enter English Number : ");
             english = input.nextFloat();
             if(math<=100 && chemistry<=100 && computerScience<=100 && physics<=100 && english<=100){
-                System.out.println("Thanks for input numbers ");
+                System.out.println("\nThanks for input numbers \n");
                 break;
             }
             else{
@@ -51,5 +51,7 @@ public class StudentGradeCalculator {
         System.out.println("Total Marks : " + totalMarks);
         System.out.println("Average Percentage : " + averagePercentage);
         System.out.println("Grade : " + grade);
+        System.out.println("\n Thanks for Using \n");
+        System.out.println("This program is created by Kanhaiya Kumar ");
     }
 }
