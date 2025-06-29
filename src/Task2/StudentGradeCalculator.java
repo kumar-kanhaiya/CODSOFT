@@ -29,5 +29,25 @@ public class StudentGradeCalculator {
         }
         float totalMarks = math + physics + chemistry + computerScience + english;
         float averagePercentage = totalMarks/5;
+        char grade;
+        if(averagePercentage >= 90 && averagePercentage<=100 ){
+            grade = 'A';
+        }
+        else if(averagePercentage>=80 && averagePercentage<90){
+            grade = 'B';
+        }
+        else if(averagePercentage>=70 && averagePercentage<80){
+            grade = 'C';
+        }
+        else if(averagePercentage>=60 && averagePercentage<70){
+            grade = 'D';
+        }
+        else if(averagePercentage>=50 && averagePercentage<60){
+            grade = 'E';
+        }
+        else{
+            grade = 'F';
+        }
+
     }
 }
