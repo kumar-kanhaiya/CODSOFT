@@ -19,9 +19,12 @@ public class StudentGradeCalculator {
             System.out.print("Enter English Number : ");
             english = input.nextFloat();
             if(math<=100 && chemistry<=100 && computerScience<=100 && physics<=100 && english<=100){
-                System.out.println("Enter marks less than or equal to 100");
-                System.out.println();
+                System.out.println("Thanks for input numbers ");
                 break;
+            }
+            else{
+                System.out.println("Enter marks less than or equal to 100");
+                System.out.println("\nTry Again \n");
             }
         }
         float totalMarks = math + physics + chemistry + computerScience + english;
