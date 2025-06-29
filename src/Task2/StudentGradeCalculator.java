@@ -48,6 +48,7 @@ public class StudentGradeCalculator {
         else{
             grade = 'F';
         }
-
+        System.out.println("Total Marks : " + totalMarks);
+        System.out.println("");
     }
 }
