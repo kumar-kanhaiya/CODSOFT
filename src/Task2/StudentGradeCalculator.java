@@ -5,22 +5,25 @@ import java.util.Scanner;
 public class StudentGradeCalculator {
     public static void main(String[] args) {
         System.out.println("\n💖Welcome to Student Grade Calculator Program 💖");
-        float math , physics , chemistry , computerScience , english ;
+        float math=0 , physics=0 , chemistry=0 , computerScience =0, english=0 ;
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Maths Number : ");
-        math = input.nextFloat();
-        System.out.print("Enter Physics Number : ");
-        physics = input.nextFloat();
-        System.out.print("Enter Chemistry Number : ");
-        chemistry = input.nextFloat();
-        System.out.print("Enter ComputerScience Number : ");
-        computerScience = input.nextFloat();
-        System.out.print("Enter English Number : ");
-        english = input.nextFloat();
+        while(math<100 || physics <100 || chemistry <100 || english<100|| computerScience < 100 ) {
+            System.out.print("Enter Maths Number : ");
+            math = input.nextFloat();
+            System.out.print("Enter Physics Number : ");
+            physics = input.nextFloat();
+            System.out.print("Enter Chemistry Number : ");
+            chemistry = input.nextFloat();
+            System.out.print("Enter ComputerScience Number : ");
+            computerScience = input.nextFloat();
+            System.out.print("Enter English Number : ");
+            english = input.nextFloat();
+            if(math<=100 && chemistry<=100 && computerScience<=100 && physics<=100 && english<=100){
+                System.out.println();
+                break;
+            }
+        }
         float totalMarks = math + physics + chemistry + computerScience + english;
         float averagePercentage = totalMarks/5;
-
-
-
     }
 }
